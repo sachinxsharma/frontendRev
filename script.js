@@ -5,7 +5,7 @@ Shery.hoverWithMediaCircle(".hvr",{videos: ["./0.mp4","./2.mp4","./3.mp4"]});
 
 // stoopping image to go up .pin
 gsap.to(".fleftele", {
-    crollTrigger: {
+    scrollTrigger: {
       trigger: "#fimages",
       pin: true,
       start: "top top",
