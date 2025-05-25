@@ -1,0 +1,73 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html, body {
+  height: 100%;
+  width: 100%;
+} */
+
+body {
+  background-image: url("https://plus.unsplash.com/premium_photo-1676422355585-27a5c6bb325b?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+}
+.calculator {
+  background-color: #f2f2ff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: solid 2px olivedrab;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+#result{
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3) inset;
+  border-radius: 5px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+button{
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid black;
+  box-shadow: 0 2p 5px rgba(0,0,0,0.3);
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+
+}
+button:hover{
+  background-color: #ddd;
+}
+.clear{
+  background-color: #ff4136;
+  color: white;
+}
+.number, .decimal{
+  background-color: #fff;
+  color: #333;
+}
+.operator{
+  background-color: #0074d9;
+  color: white; 
+}
+.eual{
+  background-color: #01ff70;
+  grid-row: span 3;
+  color: black;
+  font-weight: bold;
+}
